@@ -10,7 +10,7 @@
 }
 .content{
     height: 80vh;
-    background-color: rgb(233, 230, 230);
+    background-color:rgb(252, 234, 253);
 }
 *{
     margin: 0;
@@ -19,7 +19,7 @@
 
 #title{
    text-align: center;
-   color: indianred;
+   color:rgba(185, 111, 228, 0.822);
    font-weight: bold;
 }
 
