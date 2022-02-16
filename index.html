@@ -10,28 +10,43 @@
 </head>
 <body>
     <header>
-        <h2 id="title">Goodreturn</h2>
+        <h2 id="title">GoodReturn</h2>
     </header>
-    <main>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <section>
-                    <div class="col image">
-                        <img src="image/saving.jpg" alt="">
-                    </div>
-                </section>
-                <section class="bg-danger">
-                    <div class="col">
-                        <!-- Card grid -->
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <h3>Income</h3>
-                        </div>
-                    </div>
-                </section>
-            </div>
-    
+
+    <div class="container">
+        <div class="row">
+            <section class="col-md-6 image">
+                <img src="image/saving.jpg" alt="">
+            </section>
+            <section class="content col-md-6 d-flex justify-content-center align-items-center">
+             <div class="box">
+                <h1 class="text-center">Income</h1>
+                <div>
+                 <strong>Income:</strong>   <input class="mx-3 my-2" type="text">
+                </div>
+                <h1 class="text-center">Expense</h1>
+                <div>
+                 <strong>Food:</strong>   <input class="mx-3 my-2" type="text">
+                </div>
+                <div>
+                 <strong>Rent:</strong>   <input class="mx-3 my-2" type="text">
+                </div>
+                <div>
+                 <strong>Clothes:</strong>   <input class="mx-3 my-2" type="text">
+                </div>
+                <div class="text-center">
+                    <button class="mx-5 px-5 rounded">Calculation</button>
+                </div>
+                <div class="text-center">
+                    <h4>Total Expense: 500</h4>
+                    <h4>Balance: 1000</h4>
+                </div>
+             </div>
+            </section>
+
         </div>
-    </main>
+
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

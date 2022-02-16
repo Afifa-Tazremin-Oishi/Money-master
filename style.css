@@ -1,8 +1,18 @@
-.container .image img{
-    /* background-color: blue; */
+.container .row img{
+    height: 100%;
     width: 100%;
 }
-* {
+.image{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    height: 80vh;
+    background-color: rgb(233, 230, 230);
+}
+*{
     margin: 0;
     padding: 0;
 }
@@ -12,8 +22,6 @@
    color: indianred;
    font-weight: bold;
 }
-.body-item{
-    display: flex;
-}
+
 
 
