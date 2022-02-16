@@ -1,0 +1,19 @@
+.container .image img{
+    /* background-color: blue; */
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#title{
+   text-align: center;
+   color: indianred;
+   font-weight: bold;
+}
+.body-item{
+    display: flex;
+}
+
+
