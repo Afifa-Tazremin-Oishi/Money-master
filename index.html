@@ -36,7 +36,7 @@
                  <strong>Clothes:</strong><input id="cloth-input" class="mx-3 my-2" type="number">
                 </div>
                 <div class="text-center">
-                    <button onclick="getPositiveNumber()" id="calculation-btn" class="mx-2 px-5 rounded bg-info" style="color: white;"><strong>Calculate</strong></button>
+                    <button id="calculation-btn" class="mx-2 px-5 rounded bg-info" style="color: white;"><strong>Calculate</strong></button>
                 </div>
                  <!-- show total expences and balance -->
                 <div class="text-center">
@@ -45,7 +45,7 @@
                 </div>
                 <!-- balance saving -->
                 <div>
-                    <strong>Save:</strong><input id="save-input" class="mx-3 my-2" type="number">% <button id="save-btn" class="mx-2 px-5 rounded bg-info"><strong style="color: white;">Save</strong></button>
+                    <strong>Save:</strong><input id="save-input" class="mx-2 my-2" type="number">% <button id="save-btn" class="mx-2 px-2 rounded bg-info"><strong style="color: white;">Save</strong></button>
                 </div>
                 <div class="text-center">
                     <h5>Saving Amount: <span id="total-save">00</span></h5>
@@ -55,9 +55,11 @@
             </section>
 
         </div>
+        <!-- error message -->
         <div class="notify-section">
-            <p id="notify-failed" class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p id="notify-success" class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            <p id="notify-failed" class="notify">❌ you can not take any negative number, Please try again</p>
+            <p id="notify-error" class="notify">❌ total expence can not grether then income, Please try again</p>
+            <p id="notify-wrong" class="notify">❌ you can not save money</p>
         </div>
 
     </div>

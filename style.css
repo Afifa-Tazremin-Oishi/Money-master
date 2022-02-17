@@ -22,6 +22,22 @@
    color:rgba(185, 111, 228, 0.822);
    font-weight: bold;
 }
+.notify {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    background: #222436;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px 20px;
+    display: none;
+}
+.notify-section{
+   width: 35%;
+    margin: 0 auto;
+}
+
+
 
 
 
