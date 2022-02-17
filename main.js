@@ -3,11 +3,6 @@ function getAllValue(item){
      const inputField = document.getElementById(item + '-input');
      const inputText = inputField.value;
      const inputValue = parseFloat(inputText);
-
-     if (inputText == "") {
-       const invalidMessage = document.getElementById('notify-warning');
-       invalidMessage.style.display = 'block';
-    }
      return inputValue;
 }
 
@@ -21,7 +16,11 @@ function getExpenses(){
     const balance = incomeValue - total;
 
     //error handling
-    if(incomeValue<0 || foodValue<0 || rentValue<0 || clothValue<0){
+    if (isNaN(incomeValue) || isNaN(foodValue) || isNaN(rentValue) || isNaN(clothValue)) {
+        const invalidMessage = document.getElementById('notify-warning');
+        invalidMessage.style.display = 'block';
+    }
+    else if(incomeValue<0 || foodValue<0 || rentValue<0 || clothValue<0){
         const invalid = document.getElementById('notify-failed');
         invalid.style.display = 'block';
     }
@@ -45,8 +44,12 @@ function percentageBalance(){
     //for remaining balance
     const totalBalance = getExpenses();
     const remainingBalance = totalBalance - saveAmount;
-    
-    if(remainingBalance<0){
+    //error handling
+    if(isNaN(totalBalance) || isNaN(remainingBalance)){
+        const invalidMessage = document.getElementById('notify-warning');
+        invalidMessage.style.display = 'block'; 
+    }
+    else if(remainingBalance<0){
        const showError = document.getElementById('notify-wrong');
        showError.style.display = 'block';
     }
