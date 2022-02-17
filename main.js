@@ -3,6 +3,11 @@ function getAllValue(item){
      const inputField = document.getElementById(item + '-input');
      const inputText = inputField.value;
      const inputValue = parseFloat(inputText);
+
+     if (inputText == "") {
+       const invalidMessage = document.getElementById('notify-warning');
+       invalidMessage.style.display = 'block';
+    }
      return inputValue;
 }
 
@@ -14,7 +19,7 @@ function getExpenses(){
     const clothValue = getAllValue('cloth');
     const total = foodValue + rentValue + clothValue;
     const balance = incomeValue - total;
-    
+
     //error handling
     if(incomeValue<0 || foodValue<0 || rentValue<0 || clothValue<0){
         const invalid = document.getElementById('notify-failed');
